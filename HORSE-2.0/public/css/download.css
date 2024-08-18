@@ -1,0 +1,48 @@
+.store_logos{
+    width: 200px;
+    height: 200px;
+    transition: 1s;
+}
+
+.appstore{
+    width: 330px;
+}
+
+.download_heading{
+    color: grey;
+    margin-top: 1em;
+
+}
+.for_android{
+    margin-bottom: 20px;
+}
+.for_iphone, .for_android{
+    width: 400px;
+    height: 450px;
+    border: 10px solid rgb(201, 192, 192);
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.store_logos:hover{
+    scale: 1.2;
+}
+.btn_download{
+    width: 300px;
+    height: 60px;
+    font-size: large;
+    color: aliceblue;
+    background-color: rgb(27, 105, 27);
+    border-radius: 40px;
+    border-color: aliceblue;
+    box-shadow: 5px 5px 2px rgb(102, 230, 119);
+    margin-bottom: 15px;
+}
+.download_section{
+    display: flex;
+    margin-top: 100px;
+    padding: 20px 20px 0 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

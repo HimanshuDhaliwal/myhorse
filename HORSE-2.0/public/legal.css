@@ -1,0 +1,288 @@
+
+	body {
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+		background-color: #f0f0f0;
+	}
+
+	header {
+		background-color: #3498db;
+		color: #fff;
+		padding: 10px;
+		text-align: center;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.container {
+		max-width: 200vh;
+		margin: 0px auto;
+		padding: 150px 20px 20px 20px;
+		background-color: #fff;
+	}
+
+	h1 {
+		font-size: 24px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	nav{
+		-webkit-animation-duration:.5s;
+		animation-duration:.5s;
+		-webkit-animation-delay:.1s;
+		animation-delay:.1s
+	}
+	
+	.logo{
+		float:left;
+		height:90px;
+		width:auto;
+		margin-top:25px
+	}
+	.m-nav{
+		float:right;
+		list-style:none;
+		margin-top:57px;
+		position:relative;
+		display:-webkit-box;
+		display:flex
+	}
+	.m-nav li a{
+		color:#fff;
+		text-decoration:none;
+		text-transform:uppercase;
+		font-size:85%;
+		padding:0 20px;
+	}
+	.m-nav a:focus,.m-nav a:hover{
+		color:#4322e6
+	}
+	.linear-logo{
+		display:none
+		}
+	nav{
+		background-color:transparent;
+		position:absolute;
+		width:100%;
+		z-index:999
+	}
+	.mobile-res{
+		float:right;
+		margin-top:25px;
+		cursor:pointer;
+		display:none;
+		margin-right:5px
+	}
+	.sticky-nav .mobile-res{
+		margin-top:2px
+	}
+	.mobile-res i{
+		font-size:200%;
+		color:#fff
+	}
+	.main-nav.active .m-nav{
+		margin-top:0;
+		padding:0;
+	}
+	.show-mobile{
+		display:none;
+	}
+	.sticky-nav{
+		position:fixed;
+		width:100%;
+		top:0;
+		left:0;
+		background-color:rgba(255,255,255,.97);
+		z-index:999999;
+		box-shadow:0 2px 2px #bebebe
+	}
+	.sticky-nav .m-nav li a{
+		color:#555;
+		display:block;
+		-webkit-transition:all .2s;
+		transition:all .2s;
+		margin:10px 0;
+		padding:0 20px;
+	}
+	.sticky-nav .m-nav a:active,.sticky-nav .m-nav a:hover{
+		color:#3498db
+	}
+	.linear-logo{
+		margin:10px auto;
+		height:55px;
+	}
+	.sticky-nav .m-nav{
+		margin:20px auto;
+	}
+	.main-nav.active{
+		display:block;
+		width:100%
+	}
+	.main-nav.active .m-nav{
+		display:block;
+		float:none;
+	}
+	.main-nav.active ul li a{
+		margin:0;
+	}
+	.row{
+		max-width:100%;
+		margin:0 20px 10px 40px;
+		text-align:center;
+	}
+	.row:after,.row:before{
+		content:'';
+		display:table
+	}
+	.row:after{
+		clear:both
+	}
+	
+	.animated{
+		-webkit-animation-duration:1s;
+		animation-duration:1s;
+		-webkit-animation-fill-mode:both;
+		animation-fill-mode:both
+	}
+	@media (print),(prefers-reduced-motion:reduce){
+		.animated{
+			-webkit-animation-duration:1ms!important;
+			animation-duration:1ms!important;
+			-webkit-transition-duration:1ms!important;
+			transition-duration:1ms!important;
+			-webkit-animation-iteration-count:1!important;
+			animation-iteration-count:1!important
+		}
+	}
+	
+		@-webkit-keyframes fadeIn{
+			from{
+				opacity:0
+			}
+			to{
+				opacity:1
+			}
+		}
+		@keyframes fadeIn{
+			from{
+				opacity:0
+			}
+			to{
+				opacity:1
+			}
+		}
+		.fadeIn{
+			-webkit-animation-name:fadeIn;
+			animation-name:fadeIn
+		}
+		.row {
+			padding: 0 2%
+		}
+		
+		footer{
+			background-color:#333;
+			color:#bebebe;
+			padding:20px 0;
+			position: static;
+			
+		}
+		
+		.right-side a:link,.right-side a:visited{
+			text-decoration:none;
+			font-size:80%;
+			color:#bebebe;
+			-webkit-transition:color .2s;
+			transition:color .2s
+		}
+		.right-side a:active,.right-side a:hover{
+			color:#3498db
+		}
+		footer p{
+			font-size:70%;
+			word-spacing:2px;
+			line-height:1px
+		}
+		.left-side a{
+			color:#bebebe;
+			font-size:80%;
+			text-decoration:none
+		}
+
+		.left-side a{
+			color:#bebebe;
+			font-size:80%;
+			text-decoration:none
+		}
+		.production{
+			margin-top:2%;
+			word-spacing:3px;
+			letter-spacing:2px;
+			font-size:70%
+		}
+		.right-side{
+			float:right;
+			margin:0
+		}
+		.left-side{
+			float:left;
+			margin:0;
+			margin-top:1%
+		}
+
+	/* Responsive Styles */
+	@media (max-width: 786px) {
+		.container {
+			padding: 130px 10px 10px 10px;
+		}
+		.main-nav{
+			display: none;
+			
+		}
+		.main-logo{
+			display: none;
+		}
+		.linear-logo{
+			padding-top: 10px;
+			display: inline;
+		}
+		.mobile-res{
+			display: inline-block;
+		}
+		.main-nav{
+			margin-top:85px;
+			text-align:center;
+		}
+		
+	}
+
+	/* Additional Styles for Smaller Screens */
+	@media (max-width: 480px) {
+		.container {
+			padding: 120px 5px 5px 5px;
+		}
+		h1 {
+			font-size: 20px;
+		}
+		h2 {
+			font-size: 18px;
+		}
+		p {
+			font-size: 14px;
+		}
+		
+	}
+		

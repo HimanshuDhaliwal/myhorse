@@ -1,0 +1,45 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "cleanUrls": true,
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/home",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/blog",
+        "destination": "/blog.html"
+      },
+      {
+        "source": "/aboutUs",
+        "destination": "/aboutUs.html"
+      },
+      {
+        "source": "/contact",
+        "destination": "/contactUs.html"
+      },
+      {
+        "source": "/FAQs",
+        "destination": "/FAQs.html"
+      },
+      {
+        "source": "/terms",
+        "destination": "/tnc.html"
+      },
+      {
+        "source": "/privacy",
+        "destination": "/privacy.html"
+      }
+    ]
+  }
+}
